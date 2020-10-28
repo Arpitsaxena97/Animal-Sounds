@@ -1,0 +1,123 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "animal sound",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel skill",
+                        "cancel this skill",
+                        "cancel",
+                        "cancel it"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "help me here",
+                        "help",
+                        "help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop",
+                        "stop skill",
+                        "stop this skill",
+                        "stop this",
+                        "stop it"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": [
+                        "navigate",
+                        "navigate home",
+                        "navigate to home"
+                    ]
+                },
+                {
+                    "name": "PlayNameIntent",
+                    "slots": [
+                        {
+                            "name": "animal",
+                            "type": "ANIMAL"
+                        },
+                        {
+                            "name": "pitch",
+                            "type": "PITCH"
+                        }
+                    ],
+                    "samples": [
+                        "{animal} with {pitch} sound",
+                        "sound of {animal} with {pitch}",
+                        "{pitch} sound of {animal}",
+                        "{animal} sound with {pitch}",
+                        "{animal} sound",
+                        "sound of {animal} with {pitch} pitch",
+                        "play a sound of {animal}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "ANIMAL",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "donkey"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "horse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dog"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wolf"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tiger"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lion"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PITCH",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "high"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "low"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
